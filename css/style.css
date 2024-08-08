@@ -17,6 +17,8 @@ body {
     font-style: normal;
     background-color: #FFEE52;
     position: relative;
+    text-transform: uppercase;
+
 }
 
 .img__main--bg {
@@ -29,7 +31,6 @@ body {
     background-size: cover;
     mix-blend-mode: color;
     z-index: 10;
-    /* Ensure it is behind all other elements */
 }
 
 ul,
@@ -66,7 +67,6 @@ li {
     margin-top: 158px;
     text-align: right;
     font-family: 'GardensC', sans-serif;
-    text-transform: uppercase;
     width: 416px;
     height: 48px;
 }
@@ -89,7 +89,6 @@ li {
     margin-left: 64px;
     margin-top: 111px;
     width: 196px;
-    /* height: 603px; */
 }
 
 .top__title {
@@ -124,7 +123,6 @@ li {
 .top__mainscreen-container {
     display: flex;
     align-items: center;
-    /* Вертикальное выравнивание по центру */
 }
 
 .top__img--red-eye {
@@ -135,7 +133,6 @@ li {
 
 .top__text--subtitles {
     font-family: 'GardensC', sans-serif;
-    text-transform: uppercase;
 }
 
 .top__text--list {
@@ -183,7 +180,6 @@ li {
 
 .center__desc p {
     position: absolute;
-    text-transform: uppercase;
     width: 864px;
     height: 72px;
     margin-left: 496px;
@@ -216,7 +212,7 @@ li {
     width: 100%;
     display: flex;
     justify-content: center;
-    overflow: hidden; /* Allows images to overflow out of the container */
+    overflow: hidden;
 }
 
 .center__images--list {
@@ -227,7 +223,7 @@ li {
 .center__img--item {
     width: 315px;
     height: 315px;
-    margin: 30px 0 30px 0; /* Adds 30px margin on left and right of each image */
+    margin: 30px 0 30px 0;
 }
 
 .center__img--layer {
@@ -236,7 +232,7 @@ li {
 
 .center__secondary-desc {
     display: flex;
-    
+
     margin-left: 80px;
     margin-top: 150px;
     gap: 197px;
@@ -266,21 +262,20 @@ li {
 }
 
 .center__secondary--line {
-    width: auto; /* Ensure the images maintain their aspect ratio */
-    height: auto; /* Adjust as needed */
+    width: auto;
+    height: auto;
 }
 
 .center__secondary--line-gray {
-    margin-right: 30px; /* Add specific margin if needed */
+    margin-right: 30px;
 }
 
 .container__center--secondary-desc {
     display: flex;
     flex-direction: row;
-    gap: 350px; /* Отступ между левым и правым блоками */
-    align-items: flex-start; /* Выравнивание по верхнему краю */
+    gap: 350px;
+    align-items: flex-start;
     font-family: 'GardensC', sans-serif;
-    text-transform: uppercase;
 }
 
 .center__secondary-left {
@@ -296,7 +291,7 @@ li {
 }
 
 .center__secondary--text-right {
-    margin-top: 166px; 
+    margin-top: 166px;
 }
 
 .center__secondary--text-right p {
@@ -331,15 +326,241 @@ h3 {
 
     width: 310px;
     height: 310px;
-    top: -202px; /* Устанавливает верхнюю границу изображения на 0 */
-    left: -55px; /* Устанавливает левую границу изображения на 0 */
+    top: -202px;
+    left: -55px;
 }
 
 .center__img-blood {
     position: absolute;
-    
+
     width: 56px;
     height: 57px;
-    top: -82px; /* Устанавливает отступ сверху для изображения */
-    left: 350px; /* Устанавливает отступ слева для изображения */
+    top: -82px;
+    left: 350px;
+}
+
+.center__img-line {
+    margin-left: 931px;
+    margin-top: 30px;
+}
+
+.secondary__last {
+    margin-top: 150px;
+}
+
+.secondary__last--container {
+    display: flex;
+    flex-direction: row;
+    margin-left: 496px;
+}
+
+.secondary__last--text {
+    font-size: 60px;
+
+    background: linear-gradient(to right, #000, #FF0909);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
+
+.secondary__last--img-eye {
+    position: absolute;
+    right: 712px;
+    left: 626px;
+}
+
+.secondary__list {
+    display: flex;
+    flex-direction: column;
+    font-family: 'GardensC', sans-serif;
+
+    margin-left: 79px;
+}
+
+.secondary__last--img-blood {
+    position: absolute;
+
+    right: 139px;
+    left: 901px;
+    margin-top: -50px;
+    mix-blend-mode: multiply;
+    z-index: -1;
+}
+
+.secondary__title {
+    font-size: 240px;
+}
+
+.bottom {
+    margin-top: 130px;
+}
+
+.bottom__title {
+    font-size: 60px;
+    font-weight: 400;
+    margin-left: 80px;
+
+    background: linear-gradient(to top, #000, #FF0909);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
+
+.bottom__subtitle {
+    font-size: 32px;
+    margin-top: 70px;
+    margin-left: 1312px;
+    font-weight: 400;
+}
+
+
+.bottom__text-group {
+    display: flex;
+    flex-direction: row;
+    font-family: 'GardensC', sans-serif;
+    gap: 221px;
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-top: 40px;
+    height: 144px;
+}
+
+.bottom__text--primary {
+    width: 710px;
+}
+
+.bottom__text--secondary {
+    width: 429px;
+}
+
+.bottom__wrapper {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+
+    margin-left: 80px;
+    gap: 45px;
+}
+
+.bottom__number {
+    font-size: 160px;
+    font-family: 'GardensC', sans-serif;
+    font-weight: 400;
+
+    background: linear-gradient(90deg, #000 22%, #FF2E2E 79%, #8C0303 88%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+}
+
+.bottom__icon {
+    margin-top: 25px;
+    margin-right: 175px;
+}
+
+.bottom__figure {
+    margin-top: 20px;
+}
+
+.bottom__img--line {
+    margin-left: 80px;
+    margin-bottom: 20px;
+}
+
+.bottom__content--secondary {
+    margin-top: 150px;
+}
+
+
+.content__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: relative;
+}
+
+.content__image--primary {
+    margin-top: 22px;
+    margin-left: 42px;
+    width: 400px;
+    height: 400px;
+}
+
+.content__text-group {
+    position: absolute;
+    font-family: 'GardensC', sans-serif;
+    margin-top: 63px;
+    margin-left: 496px;
+    max-width: 710px;
+}
+
+.content__text--primary {
+    margin-bottom: 70px;
+}
+
+.content__text--secondary {
+    max-width: 435px;
+    max-height: 192px;
+}
+
+.content__image--secondary {
+    transform: rotate(-25deg);
+    mix-blend-mode: multiply;
+    width: 400px;
+    height: 400px;
+    align-self: flex-end;
+    /* Выровнять элемент по нижнему краю родительского контейнера */
+
+    margin-right: 140px;
+    margin-top: 130px;
+}
+
+.last {
+    height: 765px;
+    padding-bottom: 165px;
+}
+
+.last__inner {
+    margin-left: 80px;
+}
+
+.last__container--text {
+    display: flex;
+    flex-direction: row;
+    gap: 707px;
+}
+
+.content__text {
+    margin-top: 25px;
+}
+
+.content__text--primary {
+    color: #FF0909;
+}
+
+.content__title {
+    font-size: 240px;
+    background: linear-gradient(to bottom, #000, #FF0909);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    color: transparent;
+    position: absolute;
+
+    margin-top: 146px;
+    margin-left: 396px;
+}
+
+.content__img--blood {
+    position: absolute;
+    background: url('/images/blood-6.png') no-repeat center center;
+    background-size: cover;
+    mix-blend-mode: multiply;
+    z-index: 10;
+
+    margin-left: 343px;
 }
